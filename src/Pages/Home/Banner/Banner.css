@@ -1,0 +1,6 @@
+.banner-container{
+    background-image: linear-gradient(rgb(3 169 244 / 45%), #e97ca9e8), url(../../../images/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

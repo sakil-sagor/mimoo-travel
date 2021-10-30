@@ -1,0 +1,31 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import useServices from '../../../Hooks/useServices';
+import Service from '../../Services/Service/Service';
+import SectionTitle from '../../Shared/SectionTitle';
+
+const ServicesHome = () => {
+    const [services] = useServices([]);
+    const highNumber = services.length - 6;
+    let numStart = Math.floor(Math.random() * highNumber) + 1
+    console.log(highNumber);
+    return (
+        <div className="py-24 our-doctors-container">
+            <div className="container m-auto full-width-all ">
+                <SectionTitle color="text-white" title="Our Packages" content="You will get the best and experienced specialist here."></SectionTitle>
+                <div>
+                    <div className="grid grid-col-12 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2 xl:px-0">
+                        {
+                            services.slice(numStart, numStart + 6).map(service => <Service key={service._id} service={service}> </Service>)
+                        }
+                    </div>
+                </div>
+                <div className="mt-16 text-center ">
+                    <NavLink className="rounded-full py-3 px-6 border text-pink-500 text-lg font-semibold border-pink-500 hover:bg-pink-500 hover:text-white transition duration-500 ease-in-out " to="/doctors"> Find more Packages</NavLink>
+                </div>
+            </div>
+        </div >
+    );
+};
+
+export default ServicesHome;

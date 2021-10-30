@@ -5,7 +5,7 @@
 
 ### From budget travelers to ultra luxury 7 star tourists we cater to every need. Delivering value for your money is our prime goal. With a team of experienced travel professionals we deliver exactly what we promise. We do what we say & say what we do.
  
- ## Deliver QUALITY health care within 5 CORE standards
+ ## Deliver QUALITY Travel facility within 5 CORE standards
  
 > Adhering to high ethical and moral standards at all times.
 > 
