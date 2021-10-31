@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import img13 from '../../../images/13.jpg'
+// import img13 from '../../../images/13.jpg'
 import './Service.css'
 
 const Service = (props) => {
