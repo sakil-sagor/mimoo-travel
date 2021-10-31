@@ -6,7 +6,7 @@ import Service from '../Service/Service';
 
 const Africa = () => {
     const [services] = useServices([]);
-    console.log(services);
+
 
     let result = services.filter(service => service.continent === "Africa")
     console.log(result);

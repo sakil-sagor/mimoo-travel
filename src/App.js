@@ -2,13 +2,15 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
+import useServices from "./Hooks/useServices";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Appointment from "./Pages/Appointment/Appointment";
+import BookNow from "./Pages/BookNow/BookNow";
 import ContactUs from "./Pages/Contact Us/ContactUs";
-import AddUser from "./Pages/Dashboard/AddDoctors/AddUser";
 import AddServices from "./Pages/Dashboard/AddServices/AddServices";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 import MyOrders from "./Pages/Dashboard/MyOrders/MyOrders";
+import DirectBooking from "./Pages/DirectBooking/DirectBooking";
 import Footer from "./Pages/Footer/Footer";
 import Home from './Pages/Home/Home';
 import AfterResetPass from "./Pages/Login/ForgatePass/AfterResetPass";
@@ -44,8 +46,14 @@ function App() {
             <PrivateRoute exact path="/services/:serviceId">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+            <PrivateRoute exact path="/bookNow/:bookNowId">
+              <BookNow></BookNow>
+            </PrivateRoute>
             <PrivateRoute exact path="/appointment">
               <Appointment></Appointment>
+            </PrivateRoute>
+            <PrivateRoute exact path="/directBooking">
+              <DirectBooking></DirectBooking>
             </PrivateRoute>
             <Route exact path="/aboutUs">
               <AboutUs></AboutUs>
@@ -80,7 +88,6 @@ function App() {
           </Switch>
           <Footer></Footer>
         </Router>
-
       </AuthProvider>
 
     </div>

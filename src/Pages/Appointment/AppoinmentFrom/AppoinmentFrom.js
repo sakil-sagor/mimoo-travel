@@ -98,13 +98,13 @@ const AppoinmentFrom = () => {
                                 <br />
                                 <input type="text" id="doctor" ref={getPackName} required className="bg-white py-2 px-2 w-full rounded-2xl mt-2" />
                             </div>
-                            <div className="mb-4 flex">
+                            <div className="mb-4 md:flex">
 
                                 <div className="mr-4 w-full">
                                     <label htmlFor="date" className="text-gray-500 ">From :</label>
                                     <input type="date" id="date" ref={getFromDate} required className="bg-white py-2 px-2 w-full mr-4  rounded-2xl mt-2" />
                                 </div>
-                                <div className="w-full">
+                                <div className="w-full mt-4 md:mt-0">
                                     <label htmlFor="date" className="text-gray-500 "> To :</label>
                                     <input type="date" id="date" ref={getToDate} required className="bg-white py-2 px-2 w-full rounded-2xl mt-2" />
                                 </div>

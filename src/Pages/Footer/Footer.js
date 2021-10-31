@@ -18,17 +18,14 @@ const Footer = () => {
                 {/* middle section */}
                 <div className="col-sapn-1 ">
                     <div className=" mt-2 text-center">
-                        <h3 className="text-center py-2 font-semibold text-xl text-white">Categories</h3>
-                        <NavLink to='/doctors'>
+                        <h3 className="text-center py-2 font-semibold text-xl text-white">Supports</h3>
+                        <NavLink to='/aboutUs'>
                             <ul className="tab-list text-gray-300">
-                                <li className="cursor-pointer hover:underline"></li>
-                                <li className="cursor-pointer hover:underline"></li>
-                                <li className="cursor-pointer hover:underline"> </li>
-                                <li className="cursor-pointer hover:underline"></li>
-                                <li className="cursor-pointer hover:underline"> </li>
-                                <li className="cursor-pointer hover:underline"></li>
-                                <li className="cursor-pointer hover:underline"></li>
-                                <li className="cursor-pointer hover:underline"></li>
+                                <li className="cursor-pointer hover:underline">Terams & Conditions</li>
+                                <li className="cursor-pointer hover:underline">Privecy Policy</li>
+                                <li className="cursor-pointer hover:underline">All Guidelines</li>
+                                <li className="cursor-pointer hover:underline">History</li>
+                                <li className="cursor-pointer hover:underline">Your Feadback </li>
                             </ul >
                         </NavLink>
                     </div >

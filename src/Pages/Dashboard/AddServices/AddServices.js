@@ -47,8 +47,8 @@ const AddServices = () => {
     return (
         <div className="bg-blue-100 py-24">
             <div className="m-auto container full-width-all m-auto">
-                <h2 className="text-center text-3xl">Please add service !</h2>
-                <div className="m-auto w-8/12">
+                <h2 className="text-center text-3xl"> Add a new service here.</h2>
+                <div className="m-auto md:w-8/12 px-2">
                     <form onSubmit={handelRegister} className="register-form mt-6">
                         <div>
                             <input required className="py-2 px-4 w-full text-lg  rounded-md " type="text" ref={getPackName} placeholder="Package Name" />

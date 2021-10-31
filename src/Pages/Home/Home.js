@@ -11,6 +11,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Emergency></Emergency>
+            <AllArea></AllArea>
             <ServicesHome></ServicesHome>
             <BookingShortcut></BookingShortcut>
 

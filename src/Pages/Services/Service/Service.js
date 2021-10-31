@@ -27,7 +27,7 @@ const Service = (props) => {
                 <div className="flex pt-4 justify-between">
                     <NavLink className="transition duration-500 text-pink-500 bg-white hover:bg-pink-500 hover:text-white px-4 py-2 rounded font-semibold  mr-4 d-button " to={`services/${_id}`}> Details</NavLink>
 
-                    <NavLink className="transition duration-500 bg-pink-500 text-white px-4 py-2 rounded font-semibold hover:text-pink-500 hover:bg-white mr-4  d-button-solid" to="appointment">Book Now</NavLink>
+                    <NavLink className="transition duration-500 bg-pink-500 text-white px-4 py-2 rounded font-semibold hover:text-pink-500 hover:bg-white mr-4  d-button-solid" to={`bookNow/${_id}`}>Book Now</NavLink>
 
                 </div>
             </div>

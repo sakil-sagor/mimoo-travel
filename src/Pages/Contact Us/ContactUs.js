@@ -3,6 +3,7 @@ import PageTitle from '../Shared/PageTitle';
 import { NavLink } from 'react-router-dom';
 import imgd2 from '../../images/4.jpg'
 import './ContacsUs.css'
+import BookingShortcut from '../Shared/BookingShortcut/BookingShortcut';
 
 const ContactUs = () => {
     return (
@@ -13,7 +14,7 @@ const ContactUs = () => {
             </div>
             {/* contact us area  main body*/}
             <div className="py-12 md:py-16 lg:py-24 container full-width-all m-auto">
-                <div className="grid grid-cols-12 gap-8 px-2">
+                <div className="grid grid-cols-12 gap-8 px-2 ">
                     <div className='col-span-12 md:col-span-4'>
                         <div>
                             <img className="w-full" src={imgd2} alt="" />
@@ -75,9 +76,10 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
             {/* contact us area bottom emergency appoinment component */}
-
+            <BookingShortcut></BookingShortcut>
         </div>
     );
 };

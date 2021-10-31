@@ -6,10 +6,12 @@ import Asia from './AllCategory/Asia';
 import Australia from './AllCategory/Australia';
 import Europe from './AllCategory/Europe';
 import All from './AllCategory/All';
-
+import spin from '../../images/9.gif'
 import './Services.css'
+import useServices from '../../Hooks/useServices';
 
 const Services = () => {
+    const [services] = useServices([]);
     const [toggleState, setToggleState] = useState(1);
     const toogleTab = (index) => {
         setToggleState(index);
@@ -44,25 +46,37 @@ const Services = () => {
                         </div>
                     </div >
                     {/* show doctor list area  */}
+
+
+
+
+
                     <div className="tab-content-container sm:col-span-8 lg:col-span-10 transition ease-in  duration-700">
-                        <div className={toggleState === 1 ? 'tab-content tab-active-content' : "tab-content"}>
-                            <All></All>
-                        </div>
-                        <div className={toggleState === 2 ? 'tab-content tab-active-content' : "tab-content"}>
-                            <Asia></Asia>
-                        </div>
-                        <div className={toggleState === 3 ? 'tab-content tab-active-content' : "tab-content"}>
-                            <America></America>
-                        </div>
-                        <div className={toggleState === 4 ? 'tab-content tab-active-content' : "tab-content"}>
-                            <Africa></Africa>
-                        </div>
-                        <div className={toggleState === 5 ? 'tab-content tab-active-content' : "tab-content"}>
-                            <Europe></Europe>
-                        </div>
-                        <div className={toggleState === 6 ? 'tab-content tab-active-content' : "tab-content"}>
-                            <Australia></Australia>
-                        </div>
+                        {
+                            services.length ?
+                                <div>
+                                    <div className={toggleState === 1 ? 'tab-content tab-active-content' : "tab-content"}>
+                                        <All></All>
+                                    </div>
+                                    <div className={toggleState === 2 ? 'tab-content tab-active-content' : "tab-content"}>
+                                        <Asia></Asia>
+                                    </div>
+                                    <div className={toggleState === 3 ? 'tab-content tab-active-content' : "tab-content"}>
+                                        <America></America>
+                                    </div>
+                                    <div className={toggleState === 4 ? 'tab-content tab-active-content' : "tab-content"}>
+                                        <Africa></Africa>
+                                    </div>
+                                    <div className={toggleState === 5 ? 'tab-content tab-active-content' : "tab-content"}>
+                                        <Europe></Europe>
+                                    </div>
+                                    <div className={toggleState === 6 ? 'tab-content tab-active-content' : "tab-content"}>
+                                        <Australia></Australia>
+                                    </div>
+                                </div>
+                                :
+                                <div ><img className="m-auto block" src={spin} alt="" /></div>
+                        }
                     </div>
                 </div >
             </div>

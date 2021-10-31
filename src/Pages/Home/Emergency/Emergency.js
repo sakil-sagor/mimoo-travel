@@ -19,10 +19,10 @@ const Emergency = () => {
                         <p className="text-xl font-semibold	hover:text-gray-800">Online Booking</p>
                     </div>
                 </NavLink>
-                <NavLink className="bg-blue-600 py-16 text-center flex justify-center	items-center" to='/doctors'>
+                <NavLink className="bg-blue-600 py-16 text-center flex justify-center	items-center" to='/services'>
                     <div className="hover:text-gray-800 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110	">
                         <i class="fas fa-people-carry mr-2 text-4xl"></i>
-                        <p className="text-xl font-semibold	hover:text-gray-800">Your Packages</p>
+                        <p className="text-xl font-semibold	hover:text-gray-800">All Packages</p>
                     </div>
                 </NavLink>
                 <NavLink className="bg-red-600 py-16 text-center flex justify-center	items-center" to='appointment'>
