@@ -1,5 +1,6 @@
 import React from 'react';
 import BookingShortcut from '../Shared/BookingShortcut/BookingShortcut';
+import AboutHome from './AboutHome/AboutHome';
 import AllArea from './AllArea/AllArea';
 import Banner from './Banner/Banner';
 import Emergency from './Emergency/Emergency';
@@ -13,6 +14,7 @@ const Home = () => {
             <Emergency></Emergency>
             <AllArea></AllArea>
             <ServicesHome></ServicesHome>
+            <AboutHome></AboutHome>
             <BookingShortcut></BookingShortcut>
 
         </div>

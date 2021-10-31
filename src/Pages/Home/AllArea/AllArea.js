@@ -7,13 +7,13 @@ import './AllArea.css'
 
 const AllArea = () => {
     return (
-        <div className="bg-pink-100 py-24">
-            <div className="container m-auto full-width-all py-24 all-area shadow-2xl">
+        <div className=" lg:py-24 all-area">
+            <div className="container m-auto full-width-all py-24  shadow-2xl">
                 <div className="grid grid-cols-1 md:grid-cols-2  justify-items-center items-center px-2 ">
 
                     <div className="py-4">
                         <h1 className="text-white text-4xl font-semibold">Enjoy Your All Tours with Us</h1>
-                        <h1 className="text-white text-6xl font-semibold">Travel is Life</h1>
+                        <h1 className="text-white text-6xl font-semibold py-8">Travel is Life</h1>
                         <p className="text-white text-lg font-semibold mt-8">
                             Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. We hope you will allow us to care for you and strive to be the first and best choice for Travel.
                         </p>

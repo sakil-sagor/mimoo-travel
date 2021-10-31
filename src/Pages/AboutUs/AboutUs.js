@@ -57,11 +57,11 @@ const AboutUs = () => {
                                 ></AboutSingleTab>
                                 <AboutSingleTab
                                     title=" Money-Back Guranty"
-                                    desc="For people requiring additional follow up, the we provides rapid access to professionals specialized in diagnosing and treating heart disease."
+                                    desc="For people requiring additional follow up, the we provides rapid access to professionals specialized in Traveling and treating places."
                                 ></AboutSingleTab>
                                 <AboutSingleTab
                                     title="After Services"
-                                    desc="We make the  bridge between science and nature. Also it underpins every aspect of patient care, from diagnostic testing and treatment.  "
+                                    desc="We make the  bridge between science and nature. And we make it. Also it underpins every aspect of travel care, from  testing and treatment.  "
                                 ></AboutSingleTab>
                             </div>
                         </div>
