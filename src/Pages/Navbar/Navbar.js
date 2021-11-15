@@ -68,14 +68,9 @@ const Navbar = ({ fixed }) => {
                                         <div className='nav-item'>
                                             <NavLink className="manu-item p-2 text-lg font-bold text-white" to="/appointment">Book-A-Trip</NavLink >
                                         </div>
-                                        <div className='nav-item'>
-                                            <NavLink className="manu-item p-2 text-lg font-bold text-white" to="/contactUs"> Contact Us  </NavLink >
-                                        </div>
-                                        <div className='nav-item'>
-                                            <NavLink className="manu-item p-2 text-lg font-bold text-white mr-2" to="/aboutUs"> About Us  </NavLink >
-                                        </div>
+
                                         {/* user img login log-out */}
-                                        <div className="profile-holder py-3">
+                                        <div className="profile-holder py-3 ml-4">
                                             {
                                                 user.email || user.displayName ?
                                                     <img style={{ cursor: 'pointer' }} onClick={toggleText} className="w-12 rounded-full" src={loginPhoto()} alt="" />
