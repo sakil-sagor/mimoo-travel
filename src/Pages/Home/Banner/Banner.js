@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Banner.css'
+import './Banner.css';
 
 // home page banner 
 
@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <div className=" banner-container">
             <div className="container m-auto px-2 py-12 md:py-20 lg:py-40 full-width-all">
-                <div className="slider h-4/5   grid grid grid-cols-12">
+                <div className="slider h-4/5    grid grid-cols-12">
                     <div className="col-span-12 md:col-span-8 text-white" >
                         <h1 className="text-4xl font-extrabold"> <span className="text-pink-500">TRAVEL</span>  MORE TO</h1>
                         <br />
